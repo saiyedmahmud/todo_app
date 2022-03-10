@@ -1,0 +1,8 @@
+
+
+url
+-home
+-new
+-edit/<int:pk>
+-delete/<int:pk>
+-view/<int:pk>

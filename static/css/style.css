@@ -1,0 +1,32 @@
+.cd{
+	height: 600px;
+	overflow-x: auto;
+	background: #121212;
+}
+.lit{
+	background: #121212;
+}
+body{
+	background: #000000;
+	color: #FFFFFF;
+}
+.ai{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.ai:hover{
+	color: #CF6679;
+}
+.add{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background:#03DAC6 ;
+}
+.add-btn{
+	position: absolute;
+	bottom:10px;
+}
+.rel{
+	position: relative;
+}

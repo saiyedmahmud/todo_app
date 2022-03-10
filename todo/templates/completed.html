@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block base %}
+<div class="cd" >
+<h3 class="ms-3 border-bottom d-inline ">Completed</h3>
+{% for d in c_data %}
+<div class=" container row ">
+	<div class="mt-5 d-flex border-bottom">
+		<div class="col-1 ms-5 mt-2">		
+				<i class="fa-solid fa-circle-check btn btn-warning"></i>
+		</div>
+		<div class="col-3">
+			<h3> {{d.name}}</h3>
+		</div>
+		<div class="col-8">
+			<p class="lead">{{d.description}}</p>
+		</div>
+	</div>
+</div>
+{% endfor %}	
+</div>
+	  
+
+{% endblock  %}

@@ -1,21 +1,39 @@
 .cd{
 	height: 600px;
 	overflow-x: auto;
-	background: #121212;
+	background: #051525;
 }
 .lit{
-	background: #121212;
+	height: 600px;
+	background: #051525;
+	overflow-x: auto;
+	
+}
+.nav-btn{
+	background-color: none;
+}
+.nav-btn a {
+	background-color: #051525;
+}
+
+.nav-btn a:hover{
+	background-color: #181A25;
 }
 body{
-	background: #000000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center ;
+	background-size: cover;
 	color: #FFFFFF;
+	position: relative;
 }
 .ai{
 	text-decoration: none;
+	border: #051525;
 	color: #FFFFFF;
 }
 .ai:hover{
-	color: #CF6679;
+	background-color: #181A25;
 }
 .add{
 	width: 60px;
@@ -26,7 +44,4 @@ body{
 .add-btn{
 	position: absolute;
 	bottom:10px;
-}
-.rel{
-	position: relative;
 }

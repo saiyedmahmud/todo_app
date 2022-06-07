@@ -1,6 +1,7 @@
 from email import message
 from urllib import request
 from django import views
+import datetime
 from django.shortcuts import get_object_or_404, redirect, render
 from todo.models import Task
 from todo.forms import TaskForm
@@ -14,6 +15,12 @@ def home(request):
     total_task = data.count()
     
     return render(request, 'index.html', {'data':data, 'total_complete':complete,"total_task":total_task})
+
+def today_view(request):
+    data = Task.objects.all()
+
+
+    return render(request, 'today.html', {'datalist':data, 'today':today,'tdata':today_data})
 
 
 def create(request):

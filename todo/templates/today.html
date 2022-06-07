@@ -2,21 +2,26 @@
 
 {% block base %}
 <div class = "cd" >
-<h3 class="ms-3 border-bottom d-inline">All task</h3>
-{% for d in data  %}	
+<h3 class="ms-3 border-bottom d-inline">Today</h3>
+{% now "Y-m-d" as today %}
+
+{% for data in datalist %}	
+
+{% if today == data.created_on|date:"Y-m-d" %}
 <div class=" container row ">
 	<div class="mt-5 d-flex align-items-baseline border-bottom">
 		<div class="col-1 ms-5 mt-2">		
 				<i class="fa-solid fa-clipboard-list btn btn-light"></i>
 		</div>
 		<div class="col-3">
-			<h4> {{d.name}}</h4>
+			<h4> {{data.name}}</h4>
 		</div>
 		<div class="col-8">
-			<p class="lead">{{d.description}}</p>
+			<p class="lead">{{data.description}}</p>
 		</div>
 	</div>
 </div>
+{% endif %}
 {% endfor %}
 </div>
 {% endblock  %}

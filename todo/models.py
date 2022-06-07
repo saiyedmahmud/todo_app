@@ -13,4 +13,4 @@ class Task(models.Model):
     priority = models.CharField(choices=choose, max_length=15)
     description = models.TextField(max_length=500)
     completed = models.BooleanField(default=False)
-    on_date = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
